@@ -1,0 +1,12 @@
+fixed in commit 863d07ef48b5b4f6d2e206e37bece4656c44ef92
+
+--- origsrc/gnutls-3.2.0/lib/gnutls.pc.in	2013-04-24 03:34:02.000000000 -0500
++++ src/gnutls-3.2.0/lib/gnutls.pc.in	2013-05-28 17:25:00.672931500 -0500
+@@ -19,6 +19,6 @@ Description: Transport Security Layer im
+ URL: http://www.gnutls.org/
+ Version: @VERSION@
+ Libs: -L${libdir} -lgnutls
+-Libs.private: @LTLIBNETTLE@ @LTLIBZ@ @LTLIBINTL@ @LIBSOCKET@ @LTLIBPTHREAD@ @LTLIBICONV@ @P11_KIT_LIBS@ @LIB_SELECT@ @TSS_LIBS@ @LIB_CLOCK_GETTIME@
++Libs.private: @LTLIBNETTLE@ @LTLIBZ@ @LTLIBINTL@ @LIBSOCKET@ @LTLIBPTHREAD@ @LTLIBICONV@ @P11_KIT_LIBS@ @LIB_SELECT@ @TSS_LIBS@
+ @GNUTLS_REQUIRES_PRIVATE@
+ Cflags: -I${includedir}
